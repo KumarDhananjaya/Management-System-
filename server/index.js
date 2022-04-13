@@ -250,7 +250,7 @@ app.get('/getpolice', (req, res) => {
 
 //retrieve total No of complaints present in database
 app.get('/TNComp', (req, res) => {
-    db.query("SELECT `TNComp` FROM ", 
+    db.query("SELECT `TNComp` FROM TNComp", 
     (err, result) => {
         if(err){
             console.log(err)    
